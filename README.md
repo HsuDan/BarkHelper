@@ -1,8 +1,12 @@
 # BarkHelper
-## 【禁止商用】<br>
-BarkHelper 是开源项目Bark（详见 https://github.com/Finb/Bark ）的PC端辅助软件，省去了反复复制粘贴修改地址的麻烦。<br>
-话说本人现在早已不是程序员，只是在十几年前用Delphi写过一些非商用的软件。
-一晃这么多年过去，技巧神马的早忘光光了，代码难免笨拙，见谅。
+BarkHelper 是开源项目Bark的PC端辅助软件，省去了反复复制粘贴修改地址的麻烦。<br>
+话说本人现在早已不是程序员，只是在十几年前用Delphi写过一些非商用的软件。一晃这么多年过去，技巧神马的早忘光光了，代码难免笨拙，见谅。
+> Bark是什么？<br>
+> Bark is an iOS App which allows you to push customed notifications to your iPhone <br>
+> 客户端 <https://github.com/Finb/Bark> <br>
+> 服务器端 <https://github.com/Finb/go-tools> <br>
+> AppStore <https://itunes.apple.com/cn/app/bark-customed-notifications/id1403753865> <br>
+
 ## Releases Note
 Ver 1.6<br>
 部分代码调整，界面调整等
