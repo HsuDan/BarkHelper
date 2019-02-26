@@ -7,7 +7,7 @@ BarkHelper 是开源项目Bark的PC端辅助软件，省去了反复复制粘贴
 > 服务器端 <https://github.com/Finb/go-tools> <br>
 > AppStore <https://itunes.apple.com/cn/app/bark-customed-notifications/id1403753865> <br>
 ## 几点说明
-1. 关于360安全卫士误报。因需要在程序中调用浏览器，故use了ShellAPI单元（line 7），并使用了ShellExecute()（line 193）。<br>
+1. 关于360安全卫士可能发生误报。因需要在程序中调用浏览器，故use了ShellAPI单元（line 7），并使用了ShellExecute()（line 193）。<br>
 2. 经我个人测试，推送链接需要完整的链接（含 Http:// 或 https:// 头），否则将无法跳转，可能是BARK APP本身的限制，但不能确定，有知道的朋友麻烦给个意见或建议，谢谢啦！<br>
 ## Releases Note
 Ver 1.7<br>
