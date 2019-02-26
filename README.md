@@ -17,7 +17,8 @@ Ver 1.7<br>
 4. 修改完善不同RadioBtn选中时，文本框中默认的提示文本；<br>
 5. 增加文本框控件的SetFocus属性；<br>
 6. 增加程序icon；<br>
-7. 调整优化部分代码。<br>
+7. 调整优化部分代码。<br><br>
+![Snap](https://github.com/HsuDan/BarkHelper/blob/master/Snap.png)<br>
 <br>
 <br>
 Ver 1.6<br>
