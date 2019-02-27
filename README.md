@@ -15,7 +15,7 @@ Ver 1.7<br>
 2. 增加文本框可视面积（感谢cwup的意见及建议），以便于粘贴后的编辑；同步调整程序内各控件的布局，使之更易于直观使用；<br>
 3. 修正“链接”和“自动复制”功能的BUG（感谢cw的意见及建议）；<br>
 4. 修改完善不同RadioBtn选中时，文本框中默认的提示文本；<br>
-5. 增加文本框控件的SetFocus属性；<br>
+5. 增加文本框控件的SetFocus属性；修改了KEY修改和保存btn的enable响应；<br>
 6. 增加程序icon；<br>
 7. 调整优化部分代码。<br><br>
 ![Snap](https://github.com/HsuDan/BarkHelper/blob/master/Snap.png)<br>
