@@ -1,49 +1,49 @@
 # BarkHelper
-BarkHelper 是开源项目Bark的PC端辅助软件，省去了反复复制粘贴修改地址的麻烦。<br>
-话说本人现在早已不是程序员，只是在十几年前用Delphi写过一些非商用的软件。一晃这么多年过去，技巧神马的早忘光光了，代码难免笨拙，见谅。
-> Bark是什么？<br>
+BarkHelper is a Windows desktop companion for the open-source project Bark. It saves you the hassle of repeatedly copying, pasting and editing push URLs by hand.<br>
+A note from the author: I haven't been a programmer for a long time. I wrote some non-commercial software in Delphi over a decade ago, and many years later my skills have mostly faded, so please forgive any clumsy code.
+> What is Bark?<br>
 > Bark is an iOS App which allows you to push customed notifications to your iPhone <br>
-> 客户端 <https://github.com/Finb/Bark> <br>
-> 服务器端 <https://github.com/Finb/go-tools> <br>
+> Client <https://github.com/Finb/Bark> <br>
+> Server <https://github.com/Finb/go-tools> <br>
 > AppStore <https://itunes.apple.com/cn/app/bark-customed-notifications/id1403753865> <br>
-## 几点说明
-1. 360安全卫士有可能小概率会发生误报。因需要在程序中调用浏览器，故use了ShellAPI单元（line 7），并使用了ShellExecute()（line 193），这在360看来，可能会算作是威胁系统安全，但是以我这点水平是做不了木马或者病毒的，请大家放心[捂脸]。<br>
-2. 经我个人测试，推送链接需要完整的链接（含 Http:// 或 https:// 头），否则将无法跳转，可能是BARK APP本身的限制，但不能确定，有知道的朋友麻烦给个意见或建议，谢谢啦！<br>
-## Releases Note
+## Notes
+1. 360 Total Security may occasionally flag the program as a false positive. Because the program needs to launch a web browser, it uses the ShellAPI unit (line 7) and calls ShellExecute() (line 193). 360 may treat this as a threat to system security, but rest assured, my skills are nowhere near good enough to write a trojan or virus [facepalm].<br>
+2. In my own testing, pushed links must be complete URLs (including the http:// or https:// prefix), otherwise tapping the notification won't open them. This may be a limitation of the Bark app itself, but I'm not certain. If you know more, I'd appreciate any comments or suggestions. Thanks!<br>
+## Release Notes
 Ver 1.7<br>
-1. 增加对chrome、firefox浏览器支持（感谢JuvenRui、rgxgr、Ringoxue、cw的意见及建议），并将调用方式更改为combobox下拉菜单；<br>
-2. 增加文本框可视面积（感谢cwup的意见及建议），以便于粘贴后的编辑；同步调整程序内各控件的布局，使之更易于直观使用；<br>
-3. 修正“链接”和“自动复制”功能的BUG（感谢cw的意见及建议）；<br>
-4. 修改完善不同RadioBtn选中时，文本框中默认的提示文本；<br>
-5. 增加文本框控件的SetFocus属性；修改了KEY修改和保存btn的enable响应；<br>
-6. 增加程序icon；<br>
-7. 调整优化部分代码。<br><br>
+1. Added support for Chrome and Firefox (thanks to JuvenRui, rgxgr, Ringoxue and cw for their feedback and suggestions), and changed browser selection to a combobox drop-down;<br>
+2. Enlarged the visible area of the text box (thanks to cwup for the feedback and suggestion) to make editing after pasting easier; rearranged the other controls accordingly so the program is more intuitive to use;<br>
+3. Fixed bugs in the "Link" and "Auto Copy" features (thanks to cw for the feedback and suggestion);<br>
+4. Improved the default placeholder text shown in the text box for each RadioBtn option;<br>
+5. Added SetFocus to the text box controls; fixed the enabled state of the Edit Key and Save buttons;<br>
+6. Added a program icon;<br>
+7. Tidied up and optimized some code.<br><br>
 ![Snap](https://github.com/HsuDan/BarkHelper/blob/master/Snap.png)<br>
 <br>
 <br>
 Ver 1.6<br>
-部分代码调整，界面调整等
+Some code adjustments, UI adjustments, etc.
 <br>
 <br>
 Ver 1.5<br>
-增加调用INI文件保存Key配置功能
+Added saving the Key configuration to an INI file
 <br>
 <br>
 Ver 1.4<br>
-增加直接调用360极速浏览器功能；设置在点击RadioBtn之前推送Btn不可用；点击除“标题及内容”之外的其它RadioBtn时，“标题”Edit控件不可用
+Added the ability to launch 360 Speed Browser directly; the Push button is disabled until a RadioBtn is selected; the "Title" Edit control is disabled when any RadioBtn other than "Title and Content" is selected
 <br>
 <br>
 Ver 1.3<br>
-增加“仅内容”、“标题及内容”、“链接”、“自动复制”4个RadioBtn
+Added 4 RadioBtns: "Content Only", "Title and Content", "Link" and "Auto Copy"
 <br>
 <br>
 Ver 1.2<br>
-增加直接调用系统默认浏览器功能，内容填充完成后可以一键推送
+Added the ability to open the push URL directly in the system default browser, so you can push with one click once the content is filled in
 <br>
 <br>
 Ver 1.1<br>
-增加“标题”、“链接”、“推送文本”3个edit控件
+Added 3 Edit controls: "Title", "Link" and "Push Text"
 <br>
 <br>
 Ver 1.0<br>
-初步想法，用软件代替复制粘贴修改等一系列重复动作，尝试“仅内容”的推送功能
+Initial idea: replace the repetitive copy/paste/edit routine with a program; tried out "Content Only" pushes
