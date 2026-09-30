@@ -50,8 +50,8 @@ begin
   edt3.Enabled:=False;
   edt3.Color:=clScrollBar;
   edt2.SetFocus;
-  edt2.Text:='推送内容（仅支持单行文本）';
-  edt3.Text:='推送标题（仅支持单行文本）';
+  edt2.Text:='Push content (single line only)';
+  edt3.Text:='Push title (single line only)';
 end;
 
 procedure TForm1.rb2Click(Sender: TObject);
@@ -60,8 +60,8 @@ begin
   edt3.Enabled:=True;
   edt3.Color:=clWindow;
   edt3.SetFocus;
-  edt2.Text:='推送内容（仅支持单行文本）';
-  edt3.Text:='推送标题（仅支持单行文本）';
+  edt2.Text:='Push content (single line only)';
+  edt3.Text:='Push title (single line only)';
 end;
 
 procedure TForm1.rb3Click(Sender: TObject);
@@ -69,8 +69,8 @@ begin
   btn5.Enabled:=True;
   edt3.Enabled:=False;
   edt3.Color:=clScrollBar;
-  edt2.Text:='请粘贴含 Http:// 或 Https:// 的完整链接至此处';
-  edt3.Text:='推送标题（仅支持单行文本）';
+  edt2.Text:='Paste a full link including http:// or https:// here';
+  edt3.Text:='Push title (single line only)';
   edt2.SetFocus;
 end;
 
@@ -80,8 +80,8 @@ begin
   edt3.Enabled:=False;
   edt3.Color:=clScrollBar;
   edt2.SetFocus;
-  edt2.Text:='推送内容（仅支持单行文本）';
-  edt3.Text:='推送标题（仅支持单行文本）';
+  edt2.Text:='Push content (single line only)';
+  edt3.Text:='Push title (single line only)';
 end;
 
 procedure TForm1.btn3Click(Sender: TObject);
@@ -147,7 +147,7 @@ begin
           begin
             lb3.Caption:='firefox.exe';
           end
-          else if cb1.Text='调用 Internet Explorer 推送（默认）' then
+          else if cb1.Text='Push via Internet Explorer (default)' then
           begin
             lb3.Caption:='iexplore.exe';
           end;
@@ -174,7 +174,7 @@ begin
         head:=lb1.Caption;
         key:=edt1.Text;
         txt:=edt2.Text;
-        lb1.Caption:=head+key+'/点击访问链接'+'?url='+txt;
+        lb1.Caption:=head+key+'/Tap%20to%20open%20link'+'?url='+txt;
         end
           else if rb4.Checked then
           begin
